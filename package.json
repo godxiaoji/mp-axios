@@ -1,0 +1,42 @@
+{
+  "name": "mp-axios",
+  "version": "0.0.1",
+  "description": "基于axios加入小程序适配器，同时实现cookie的扩展",
+  "main": "./index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "fix": "eslint --fix ./src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godxiaoji/mp-axios.git"
+  },
+  "keywords": [
+    "axios",
+    "wx",
+    "promise",
+    "xhr",
+    "miniprogram",
+    "adapter",
+    "ajax"
+  ],
+  "author": "Travis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/godxiaoji/mp-axios/issues"
+  },
+  "homepage": "https://github.com/godxiaoji/mp-axios#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "set-cookie-parser": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
