@@ -7,12 +7,12 @@
 使用NPM的方式引入：
 
 ```bash
-npm install mp-axios
+npm install @godxiaoji/mp-axios --save
 ```
 
 微信小程序需要单独构建：[npm 支持](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html)
 
-`const mpAxios = require('mp-axios');`
+`const mpAxios = require('@godxiaoji/mp-axios');`
 
 也可以使用`dist`目录下的构建版本
 
