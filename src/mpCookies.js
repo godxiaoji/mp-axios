@@ -117,7 +117,7 @@ function setCookie2Array(setCookieStr) {
  * cookie操作原型
  * @param {string} url 根据传入的url确定domain和path
  */
-function mpCookies(url) {
+function Cookies(url) {
   var urlObj = utils.urlParse(url);
 
   this._url = url;
@@ -133,9 +133,7 @@ function mpCookies(url) {
   this._secure = urlObj.protocol === 'https:';
 }
 
-mpCookies.setCookie2Array = setCookie2Array;
-
-mpCookies.prototype = {
+Cookies.prototype = {
   write: function write(name, value, expires, path, domain, secure) {
     var cookie = {
       name: name.toString(),
@@ -230,5 +228,8 @@ mpCookies.prototype = {
 
 clearExpiredCookies();
 
-module.exports = mpCookies;
-module.exports.default = mpCookies;
+module.exports = {
+  Cookies: Cookies,
+  setCookie2Array: setCookie2Array
+};
+module.exports.default = Cookies;

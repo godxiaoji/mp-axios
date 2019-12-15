@@ -1,6 +1,6 @@
 {
   "name": "@godxiaoji/mp-axios",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "基于axios加入小程序适配器，同时实现cookie的扩展",
   "main": "./index.js",
   "directories": {
